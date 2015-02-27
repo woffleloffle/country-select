@@ -16,6 +16,19 @@ The `{countrycode}` variable is in the format specified in [ISO 3166-1 alpha-2](
     </select>
 ```
 
+## Setup
+
+`git clone https://github.com/WillemLabu/country-select && cd country-select`
+
+`npm i && bower install`
+
+`grunt init`
+
+:{D
+
+To build a minified & optimised version of the code, run `grunt` and check the `dist` directory.
+
+
 ## Attribution
 
 Using the FamFamFam pack from [flag-sprites](http://www.flag-sprites.com/).
