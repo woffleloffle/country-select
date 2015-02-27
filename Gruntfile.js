@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     // Automatically inject Bower components into the HTML file
     wiredep: {
       app: {
-        ignorePath: new RegExp('^app/|../'),
+        ignorePath: new RegExp('^app/'),
         src: ['app/index.html']
       }
     },
