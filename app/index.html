@@ -1,0 +1,170 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Country Select</title>
+        <meta name="description" content="A drop-down of countries with flags.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+        <!-- endbower -->
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="css/country-select.css">
+
+        <style type="text/css">
+            /**
+             *  Override just for the demo
+             */
+            .countrySelect {
+                max-width: 300px;
+            }
+        </style>
+
+        <script src="bower_components/modernizr/modernizr.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">Country Select</h1>
+                <nav>
+                    <ul>
+                        <li><a href="https://github.com/WillemLabu/country-select">Source</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article>
+                    <header>
+                        <h1>Demo</h1>
+                        <p>All you need to do is drop the <code>&lt;select&gt;</code> item into the HTML.</p>
+                        <p>The plugin will do the rest.</p>
+                    </header>
+                    <section>
+
+                        <code>
+                            &lt;select name="country" class="flags"&gt;<br>
+                            &nbsp;&nbsp;&lt;option class="flag flag-{countrycode}"&gt;Country Name&lt;/option&gt;<br>
+                            &nbsp;&nbsp;...<br>
+                            &lt;/select&gt;
+                        </code>
+                        
+                        <p>Here's an example of African countries:</p>
+
+                        <!--
+                            `name` & `class` are required attributes
+
+                            Anything else is optional, but will be copied
+                            to the <input /> that replaces the <select>
+                        -->
+                        <select
+                            name="country"
+                            class="flags"
+
+                            id="africanCountries"
+                            placeholder="Select a country"
+                        >
+
+                            <option class="flag flag-ao">Angola</option>
+                            <option class="flag flag-bj">Benin</option>
+                            <option class="flag flag-bw">Botswana</option>
+                            <option class="flag flag-bf">Burkina Faso</option>
+                            <option class="flag flag-bi">Burundi</option>
+                            <option class="flag flag-cm">Cameroon</option>
+                            <option class="flag flag-cv">Cape Verde</option>
+                            <option class="flag flag-cf">Central African Republic</option>
+                            <option class="flag flag-td">Chad</option>
+                            <option class="flag flag-km">Comores</option>
+                            <option class="flag flag-cg" selected>Congo</option>
+                            <option class="flag flag-ci">Cote d'Ivoire</option>
+                            <option class="flag flag-dj">Djibouti</option>
+                            <option class="flag flag-cd">DRC</option>
+                            <option class="flag flag-gq">Equatorial Guinea</option>
+                            <option class="flag flag-er">Eritrea</option>
+                            <option class="flag flag-et">Ethiopia</option>
+                            <option class="flag flag-ga">Gabon</option>
+                            <option class="flag flag-gm">Gambia</option>
+                            <option class="flag flag-gh">Ghana</option>
+                            <option class="flag flag-gn">Guinea</option>
+                            <option class="flag flag-gw">Guinea Bissau</option>
+                            <option class="flag flag-ke">Kenya</option>
+                            <option class="flag flag-ls">Lesotho</option>
+                            <option class="flag flag-lr">Liberia</option>
+                            <option class="flag flag-mg">Madagascar</option>
+                            <option class="flag flag-mw">Malawi</option>
+                            <option class="flag flag-ml">Mali</option>
+                            <option class="flag flag-mr">Mauritania</option>
+                            <option class="flag flag-mu">Mauritius</option>
+                            <option class="flag flag-mz">Mozambique</option>
+                            <option class="flag flag-na">Namibia</option>
+                            <option class="flag flag-ne">Niger</option>
+                            <option class="flag flag-ng">Nigeria</option>
+                            <option class="flag flag-re">Reunion</option>
+                            <option class="flag flag-rw">Rwanda</option>
+                            <option class="flag flag-st">Sao Tome</option>
+                            <option class="flag flag-sn">Senegal</option>
+                            <option class="flag flag-sc">Seychelles</option>
+                            <option class="flag flag-sl">Sierra Leone</option>
+                            <option class="flag flag-so">Somalia</option>
+                            <option class="flag flag-za">South Africa</option>
+                            <option class="flag flag-ss">South Sudan</option>
+                            <option class="flag flag-sh">St Helena</option>
+                            <option class="flag flag-sd">Sudan</option>
+                            <option class="flag flag-sz">Swaziland</option>
+                            <option class="flag flag-tz">Tanzania</option>
+                            <option class="flag flag-tg">Togo</option>
+                            <option class="flag flag-ug">Uganda</option>
+                            <option class="flag flag-zm">Zambia</option>
+                            <option class="flag flag-zw">Zimbabwe</option>
+                        </select>
+
+                    </section>
+
+                    <footer>
+                        <h3>Requirements</h3>
+                        <ul>
+                            <li>Include the plugin CSS.</li>
+                            <li>Include the plugin JS after jQuery.</li>
+                            <li>Add the proper classes to your <code>&lt;select&gt; elements</li>
+                        </ul>
+                    </footer>
+                </article>
+
+                <aside>
+                    <h3>Notes:</h3>
+                    <p>The <code>{countrycode}</code> variable that you attach to the option items are based on the following spec: <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">ISO 3166-1 alpha-2</a>.</p>
+                    <p><code>bower install</code> is WIP.</p>
+                    <p>Using the FamFamFam pack from <a href="http://www.flag-sprites.com/" target="_blank">flag-sprites</a>.</p>
+                </aside>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>Made with love at FLNT+TNDR</h3>
+            </footer>
+        </div>
+
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+
+        <script src="js/country-select.js"></script>
+        
+    </body>
+</html>

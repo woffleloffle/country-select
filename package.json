@@ -1,0 +1,21 @@
+{
+  "name": "country-select",
+  "version": "0.0.1",
+  "repository": "https://github.com/WillemLabu/country-select",
+  "description": "A drop-down of countries with flags.",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-imagemin": "~0.7.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-cssmin": "~0.9.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-autoprefixer": "~0.7.2",
+    "load-grunt-tasks": "~0.4.0",
+    "grunt-wiredep": "^1.7.0",
+    "grunt-usemin": "~2.1.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
