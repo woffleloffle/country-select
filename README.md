@@ -2,6 +2,8 @@
 
 A wrapper that replaces a `<select>` element with a JavaScript powered drop down with mini-flags.
 
+![country select preview](http://i.imgur.com/lCdeAwm.png)
+
 Check the demo in this repo.
 
 
