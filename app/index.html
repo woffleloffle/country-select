@@ -165,6 +165,18 @@
         </div>
 
         <script src="js/country-select.js"></script>
+
+        <script>
+        /**
+         *  Just for the demo
+         */
+
+         window.$('#africanCountries').on('country-selected', function(){
+            'use strict';
+            window.console.log('Country Selected!', window.$(this).val());
+         });
+
+        </script>
         
     </body>
 </html>
