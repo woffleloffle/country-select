@@ -152,6 +152,10 @@
 			.siblings('.selectedCountry')
 			.find('.flag')
 			.attr('class', flag);
+
+		// Emit an event that can be captured
+		$(this).parent('ul').siblings('.selectedCountry').children('input').trigger('country-selected');
+
 	});
 
 

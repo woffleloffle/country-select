@@ -13,10 +13,29 @@ Check the demo in this repo.
 The `{countrycode}` variable is in the format specified in [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
 
 ``` html
-    <select name="country" class="flags">
-		<option class="flag flag-{countrycode}">Country Name</option>
-    </select>
+<select name="country" class="flags">
+	<option class="flag flag-{countrycode}">Country Name</option>
+</select>
 ```
+
+There is a custom-listener attached the selection of an item.
+
+If your `<select>` has an `name` of `countries`:
+
+``` javascript
+$('input[name="countries"]').on('country-selected', function(){
+    // ...
+});
+```
+
+..or, if your `<select>` had an `id="countries"` property:
+
+``` javascript
+$('#countries').on('country-selected', function(){
+    // ...
+});
+```
+
 
 ## Setup
 
