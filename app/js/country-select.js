@@ -8,12 +8,12 @@
 
 (function($) {
 	'use strict';
-
+    
 	// jQuery check
 	if (typeof $ === 'undefined') {
 		var x = 'The Country Select plugin requires jQuery.';
 		window.console.warn(x);
-
+       
 		// Show them all
 		var selects = document.getElementsByClassName('flags');
 		for (var i = 0; i < selects.length; i++) {
@@ -22,6 +22,12 @@
 
 		return;
 	}
+    
+     // load countries
+    $("#africanCountries").html("");
+    $.each(mCountryArray, function( i, l ){
+         $("#africanCountries").append('<option class="flag flag-'+l.code+'">'+l.country+'</option>');
+    });
 
 
 	/**
